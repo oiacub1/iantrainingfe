@@ -41,7 +41,7 @@ jobs:
         
     - name: Deploy to S3
       run: |
-        aws s3 sync ./dist s3://iantraining --delete
+        aws s3 sync ./dist s3://iantrainingfe --delete
         
     - name: Invalidate CloudFront (optional)
       if: github.ref == 'refs/heads/main'
