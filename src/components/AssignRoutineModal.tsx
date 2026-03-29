@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { AlertCircle, X } from 'lucide-react'
-import routinesApi, { Routine } from '../api/routines'
+import routinesApi from '../api/routines'
 import { usersApi, TrainerStudent } from '../api/users'
 
 interface AssignRoutineModalProps {

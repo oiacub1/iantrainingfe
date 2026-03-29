@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuthStore } from '../../store/authStore'
-import routinesApi, { Routine, UpdateRoutineRequest, WorkoutDay, CreateWorkoutDayRequest } from '../../api/routines'
+import routinesApi, { Routine, UpdateRoutineRequest, CreateWorkoutDayRequest } from '../../api/routines'
 import { exercisesApi, Exercise } from '../../api/exercises'
 
 type ExerciseSetDraft = {
