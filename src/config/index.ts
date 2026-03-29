@@ -2,7 +2,7 @@
 
 export const API_CONFIG = {
   // Backend API URLs
-  BASE_URL: import.meta.env.VITE_API_URL || 'http://localhost:8080',
+  BASE_URL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080',
   API_VERSION: 'v1',
   ENDPOINTS: {
     // Exercises
