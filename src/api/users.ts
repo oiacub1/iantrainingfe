@@ -99,7 +99,7 @@ export const usersApi = {
       API_CONFIG.ENDPOINTS.TRAINERS_STUDENTS(trainerId),
       { params: { limit, lastKey } }
     )
-    return { students: data.data, nextKey: undefined }
+    return { students: data.data || [], nextKey: undefined }
   },
 
   assignTrainer: async (trainerId: string, studentId: string) => {
