@@ -11,9 +11,6 @@ export interface RegisterRequest {
   email: string
   password: string
   role: 'STUDENT' | 'TRAINER'
-  phone?: string
-  fitnessLevel?: string
-  goals?: string[]
 }
 
 export interface LoginResponse {

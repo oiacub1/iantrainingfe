@@ -41,9 +41,6 @@ export default function Register() {
         email,
         password,
         role,
-        phone: '',
-        fitnessLevel: role === 'STUDENT' ? 'BEGINNER' : undefined,
-        goals: role === 'STUDENT' ? [] : undefined,
       }
 
       const response = await authApi.register(userData)
