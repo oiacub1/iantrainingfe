@@ -39,7 +39,7 @@ export const exercisesApi = {
     const { data } = await apiClient.get<{ data: Exercise[] }>(API_CONFIG.ENDPOINTS.EXERCISES, {
       params: { trainerId },
     })
-    return data.data
+    return data.data || []
   },
 
   getById: async (id: string) => {
